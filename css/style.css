@@ -28,7 +28,7 @@ body {
     justify-content: space-between;
     gap: 42px;
     list-style-type: none;
-    
+
 
 }
 
@@ -166,4 +166,66 @@ a:focus {
     position: relative;
     right: 27rem;
     top: 6rem;
+}
+
+/* about us */
+
+.about {
+    position: relative;
+}
+
+.about img {
+    margin-left: 3.9rem;
+    border-radius: 12px;
+}
+
+.yellow-box p {
+    position: absolute;
+    top: 150px;
+    right: 80px;
+    width: 20%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FDBC14;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.blue-box {
+    background-color: #005DE0;
+    position: absolute;
+    bottom: 150px;
+    top: 20rem;
+    padding-bottom: 22rem;
+    left: 45rem;
+    width: 45rem;
+    border-radius: 15px;
+}
+
+.blue-box h2 {
+    position: relative;
+    top: 6rem;
+    left: 22px;
+    width: 90%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #F0F1F2;
+    font-size: 2.5rem;
+
+}
+
+.blue-box h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #F0F1F2;
+    border: 1px solid white;
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    border-radius: 30px;
+    padding: 1rem;
+    width: 15%;
 }
