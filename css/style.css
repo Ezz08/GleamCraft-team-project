@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F1F2;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 22px;
+    border-bottom: 1px solid rgb(194, 188, 188);
+    padding: 20px;
+
+}
+
+.nav nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+
+
+}
+
+.nav nav {
+    list-style-type: none;
+}
+
+.nav li a {
+    color: rgb(75, 75, 75);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav a:hover {
+    color: rgb(102, 102, 239);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo h4 {
+    position: relative;
+    left: 30px;
+    top: 3px;
+    font-family: "Asap Sharp", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+
+}
