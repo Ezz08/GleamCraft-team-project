@@ -10,6 +10,8 @@ body {
     background-color: #F0F1F2;
 }
 
+/* Header */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -64,3 +66,5 @@ nav a:hover {
     font-size: 30px;
 
 }
+
+/* Hero Sec */
