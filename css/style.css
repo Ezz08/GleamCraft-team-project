@@ -500,6 +500,144 @@ a:focus {
     margin: auto;
 }
 
+.progress{
+    background-color: black;
+    margin-inline: 4rem;
+    border-radius: 20px;
+    padding: 10rem 0;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.texts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-inline: 3rem;
+}
+
+.texts h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    top: -4rem;
+    font-size: 5rem;
+    width: 444px;
+    
+}
+
+.texts p{
+    color: #7c7f83;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    bottom: -6rem;
+    width: 40%;
+}
+
+.progress_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-inline: 3rem;
+    bottom: -8rem;
+    position: relative;
+}
+
+.progress-card{
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    padding: 3rem 5.5rem;
+}
+
+.progress-card:first-child h2{
+    color: #F5C000;
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    left: -40%;
+    top: -2rem;
+}
+
+.progress-card:first-child p{
+    color: #7c7f83;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    bottom: 1rem;
+    left: -3rem;
+}
+
+.progress-card:nth-child(2) h2{
+    color: #3B7EF5;
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    left: -40%;
+    top: -2rem;
+}
+
+.progress-card:nth-child(2) p{
+    color: #7c7f83;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    bottom: 1rem;
+    left: -3rem;
+}
+
+.progress-card:nth-child(3) h2{
+    color: #2DB87A;
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    left: -40%;
+    top: -2rem;
+}
+
+.progress-card:nth-child(3) p{
+    color: #7c7f83;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    bottom: 1rem;
+    left: -3rem;
+}
+
+.progress-card:nth-child(4) h2{
+    color: #F0F1F2;
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    left: -40%;
+    top: -2rem;
+}
+
+.progress-card:nth-child(4) p{
+    color: #7c7f83;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    bottom: 1rem;
+    left: -3rem;
+}
+
+
+
 
 @media (max-width: 768px) {
 
