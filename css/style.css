@@ -432,6 +432,10 @@ a:focus {
 
 @media (max-width: 768px) {
 
+    body{
+        overflow-x: hidden;
+    }
+
 
     .header {
         flex-direction: column;
