@@ -429,10 +429,81 @@ a:focus {
     transform: translateY(-4px);
 }
 
+.stories {
+    margin-inline: 3rem;
+    margin-bottom: 7rem;
+}
+
+.stories h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #12161B;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 6rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+
+}
+
+.stories-images {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 14%;
+    margin: auto;
+}
+
+.stories-images img:last-child{
+    position: relative;
+    bottom: -2rem;
+}
+
+.stories-images img:first-child{
+    position: relative;
+    bottom: 0.5rem;
+    width: 5rem;
+    left: -1rem;
+}
+
+.card {
+    background-color: #005DE0;
+    text-align: center;
+    border-radius: 20px;
+    padding: 4rem 0;
+}
+
+.card p:first-child {
+    color: #F0F1F2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    top: -2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.card p:last-child {
+    color: #F0F1F2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    bottom: -3rem;
+    margin: auto;
+}
+
 
 @media (max-width: 768px) {
 
-    body{
+    body {
         overflow-x: hidden;
     }
 
