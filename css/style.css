@@ -247,7 +247,7 @@ a:focus {
 
 }
 
-.clinic3-4{
+.clinic3-4 {
     margin-right: 3rem;
 }
 
@@ -425,6 +425,213 @@ a {
 
 .clinic-4 a:hover,
 a:focus {
-    color: rgb(4, 14, 39);;
+    color: rgb(4, 14, 39);
     transform: translateY(-4px);
 }
+
+
+@media (max-width: 768px) {
+
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        margin-inline: 10px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .logo h4 {
+        left: 10px;
+        font-size: 22px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        left: 50px;
+    }
+
+    .nav li a {
+        font-size: 13px;
+    }
+
+}
+
+
+.hero_parent {
+    flex-direction: column;
+    gap: 30px;
+    margin-inline: 20px;
+    margin-bottom: 100px;
+}
+
+.herochild {
+    width: 100%;
+}
+
+.herochild p {
+    width: 50%;
+    left: 0;
+    top: 20px;
+    font-size: 14px;
+}
+
+.herochild h1 {
+    font-size: 4.5rem;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    position: relative;
+    right: 0.5rem;
+}
+
+.herochild img {
+    width: 100%;
+    height: auto;
+}
+
+
+.herochild2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.herochild2 img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+.herochild2 h1 {
+    font-size: 4.5rem;
+    letter-spacing: 5px;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.herochild2 p {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 90%;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 20px;
+}
+
+.about img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+}
+
+.yellow-box p {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    padding: 1.5rem;
+}
+
+.blue-box {
+    position: static;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 20px;
+}
+
+.blue-box h4 {
+    position: static;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.blue-box h2 {
+    position: static;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+
+.OurClinics {
+    margin-top: 80px;
+    margin-inline: 20px;
+}
+
+.OurClinics h1 {
+    font-size: 3rem;
+}
+
+.clinics {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.clinic1-2,
+.clinic3-4 {
+    width: 100%;
+}
+
+.clinic-1,
+.clinic-2,
+.clinic-3,
+.clinic-4 {
+    width: 100%;
+    padding: 2rem;
+}
+
+.clinic-1 {
+    margin-bottom: 30px;
+}
+
+.clinic-2 {
+    margin-bottom: 7px;
+}
+
+.clinic-3 {
+    margin-bottom: 30px;
+}
+
+.clinic-4 {
+    margin-bottom: 30px;
+}
+
+.clinic-1 h2,
+.clinic-2 h2,
+.clinic-3 h2,
+.clinic-4 h2 {
+    position: static;
+    font-size: 1.5rem;
+}
+
+.clinic-1 a,
+.clinic-2 a,
+.clinic-3 a,
+.clinic-4 a {
+    position: static;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
