@@ -636,6 +636,92 @@ a:focus {
     left: -3rem;
 }
 
+.footer-parent {
+    background-color: black;
+    border-radius: 20px;
+    margin-inline: 20px;
+    height: 68vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0 1rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-child h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.footer-child:first-child p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    bottom: -80%;
+}
+
+
+.footer-child h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+.footer-child:nth-child(2) {
+    position: relative;
+    left: 5rem;
+}
+
+.footer-child:nth-child(2) p {
+    line-height: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-child:nth-child(3) {
+    position: relative;
+    right: -12rem;
+}
+
+.footer-child:nth-child(3) p {
+    line-height: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 40%;
+}
+
+.footer-child:nth-child(4){
+    position: relative;
+    left: -3rem;
+}
+
+.footer-child ul {
+    list-style-type: none;
+}
+
+.footer-child a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    left: 1px;
+    line-height: 2rem;
+}
+
+.footer-child a:hover,
+a:focus {
+    color: #7c7f83;
+
+}
+
 
 
 
