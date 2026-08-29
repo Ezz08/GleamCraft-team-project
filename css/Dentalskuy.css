@@ -732,7 +732,7 @@ footer {
 
 .footer-child a:hover,
 a:focus {
-  color: #dfe6ff;
+  color: #7c7f83;
 }
 
 @media (max-width: 768px) {
@@ -742,9 +742,15 @@ a:focus {
 
   .header {
     flex-direction: column;
+    align-items: center;
     gap: 18px;
     margin-inline: 10px;
     padding: 15px 10px;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: center;
   }
 
   .logo img {
@@ -753,6 +759,7 @@ a:focus {
 
   .logo h4 {
     left: 10px;
+    top: 0;
     font-size: 22px;
   }
 
@@ -761,15 +768,19 @@ a:focus {
   }
 
   .nav nav {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    position: relative;
+    align-items: center;
+    gap: 10px 16px;
+    position: static;
+    left: 0;
     right: 0;
   }
 
   .nav li a {
     font-size: 13px;
+    left: 0;
   }
 
   .main-con {
