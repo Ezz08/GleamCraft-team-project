@@ -1,0 +1,745 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F1F2;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 22px;
+    border-bottom: 1px solid rgb(194, 188, 188);
+    background-color: #F0F1F2;
+    padding: 20px;
+
+}
+
+.nav nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+    list-style-type: none;
+    position: relative;
+    top: 8px;
+    left: -47.4px;
+}
+
+
+.nav li a {
+    color: rgb(75, 75, 75);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.2s;
+    display: inline-block;
+
+}
+
+nav a:hover,
+a:focus {
+    color: rgb(102, 102, 239);
+    transform: translateY(-2px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo h4 {
+    position: relative;
+    left: 30px;
+    top: 7px;
+    font-family: "Asap Sharp", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+
+}
+
+/* Dentics Hero */
+
+.denticsHero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 70px 60px;
+    background-color: #F0F1F2;
+}
+
+
+.denticsHeroText {
+    flex: 1;
+}
+
+.denticsHeroText h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 0;
+}
+
+.denticsHeroText h1 span {
+    color: #14b8e0;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.denticsHeroText p {
+    color: #6b7677;
+    margin: 20px 0 30px;
+    max-width: 420px;
+}
+
+
+.denticsHeroButtons {
+    display: flex;
+    gap: 16px;
+}
+
+.denticsGetStarted {
+    background-color: #14b8e0;
+    color: white;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.denticsGetStarted:hover {
+    background-color: rgb(16, 154, 169);
+    transform: scale(1.05);
+}
+
+.denticsLearnMore {
+    background-color: transparent;
+    border: 1px solid #c9d2d3;
+    padding: 14px 26px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.denticsLearnMore:hover {
+    border-color: #14b8e0;
+    color: #14b8e0;
+    transform: scale(1.05);
+}
+
+.denticsHeroImage {
+    flex: 1;
+    height: 620px;
+    min-height: 620px;
+
+    background-image: url(../img/n13den.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 10px;
+
+    animation: denticsImage 10s infinite;
+}
+
+
+@keyframes denticsImage {
+
+    0% {
+        background-image: url(../img/n1den.jpeg);
+        transform: scale(1);
+    }
+
+    20% {
+        background-image: url(../img/n2den.jpeg);
+        transform: scale(1.03);
+    }
+
+    25% {
+        background-image: url(../img/n3den.jpeg);
+        transform: scale(1);
+    }
+
+    45% {
+        background-image: url(../img/n4den.jpeg);
+        transform: scale(1.03);
+    }
+
+    50% {
+        background-image: url(../img/n5den.jpeg);
+        transform: scale(1);
+    }
+
+    70% {
+        background-image: url(../img/n6den.jpeg);
+        transform: scale(1.03);
+    }
+
+    75% {
+        background-image: url(../img/n7den.jpeg);
+        transform: scale(1);
+    }
+
+    95% {
+        background-image: url(../img/n8den.jpeg);
+        transform: scale(1.03);
+    }
+
+    100% {
+        background-image: url(../img/n8den.jpeg);
+        transform: scale(1);
+    }
+
+}
+
+/*
+.denticsBadge {
+    position: absolute;
+
+    background-color: white;
+
+    border-radius: 30px;
+
+    padding: 8px 16px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.denticsBadge span {
+    display: block;
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    color: #6b7677;
+    
+}
+
+.denticsBadgeOne {
+    top: 10%;
+    right: 0;
+
+    color: #7c3aed;
+}
+
+.denticsBadgeTwo {
+    top: 45%;
+    right: 30%;
+
+    color: #a855f7;
+}
+
+.denticsBadgeThree {
+    bottom: 5%;
+    left: 5%;
+
+    color: #14b8e0;
+}*/
+.denticsBadgeOne {
+    top: 10%;
+    right: 0;
+    border-radius: 0;
+
+    color: #7c3aed;
+
+    animation: denticsBadgeMove 3.5s infinite;
+}
+
+.denticsBadgeTwo {
+    top: 45%;
+    right: 30%;
+
+    color: #a855f7;
+
+    animation: denticsBadgeMove 4s infinite;
+
+    animation-delay: 0.5s;
+}
+
+.denticsBadgeThree {
+    bottom: 5%;
+    left: 5%;
+
+    color: #14b8e0;
+
+    animation: denticsBadgeMove 3s infinite;
+
+    animation-delay: 1s;
+}
+
+
+@keyframes denticsBadgeMove {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+.denticsSectionTitle {
+    text-align: center;
+
+    padding: 40px 20px 10px;
+}
+
+.denticsSectionTitle h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    margin: 0;
+}
+
+.denticsSectionTitle h2 span {
+    color: #14b8e0;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+.denticsSectionTitle p {
+    color: #6b7677;
+
+    margin-top: 8px;
+}
+
+
+
+.denticsStepsSection {
+    padding: 20px 60px 70px;
+    background-color: #F0F1F2;
+}
+
+.denticsSteps {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.denticsStepItem {
+    flex: 1;
+
+    max-width: 260px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    padding: 30px 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition: 0.4s;
+}
+
+.denticsStepItem:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.denticsStepItem i {
+    font-size: 26px;
+
+    color: #14b8e0;
+
+    background-color: #e6f8fc;
+
+    width: 60px;
+
+    height: 60px;
+
+    line-height: 60px;
+
+    border-radius: 50%;
+
+    margin-bottom: 16px;
+}
+
+.denticsStepItem h3 {
+    font-size: 17px;
+
+    margin-bottom: 6px;
+}
+
+.denticsStepItem p {
+    font-size: 13px;
+
+    color: #6b7677;
+
+    margin: 0;
+}
+
+
+.denticsProvideSection {
+    display: flex;
+
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 70px 60px;
+
+    background-color: #F0F1F2;
+}
+
+.denticsProvideImage {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.denticsProvideImage img {
+    max-width: 320px;
+
+    width: 100%;
+
+    transition: 0.5s;
+}
+
+.denticsProvideImage:hover img {
+    transform: scale(1.05);
+}
+
+.denticsProvideText {
+    flex: 1;
+}
+
+.denticsProvideText h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    margin-bottom: 16px;
+}
+
+.denticsProvideText h2 span {
+    color: #14b8e0;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+.denticsProvideText p {
+    color: #6b7677;
+
+    margin-bottom: 24px;
+
+    max-width: 420px;
+}
+
+
+
+.denticsChecklist {
+    display: flex;
+
+    gap: 50px;
+}
+
+.denticsChecklist ul {
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.denticsChecklist li {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 14px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.denticsChecklist li:hover {
+    transform: translateX(8px);
+
+    color: #14b8e0;
+}
+
+.denticsChecklist i {
+    color: #14b8e0;
+}
+
+.footer-parent {
+    background-color: black;
+    border-radius: 20px;
+    margin-inline: 20px;
+    height: 68vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0 1rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-child h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.footer-child:first-child p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    bottom: -80%;
+}
+
+
+.footer-child h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+.footer-child:nth-child(2) {
+    position: relative;
+    left: 5rem;
+}
+
+.footer-child:nth-child(2) p {
+    line-height: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-child:nth-child(3) {
+    position: relative;
+    right: -12rem;
+}
+
+.footer-child:nth-child(3) p {
+    line-height: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 40%;
+}
+
+.footer-child:nth-child(4) {
+    position: relative;
+    left: -3rem;
+}
+
+.footer-child ul {
+    list-style-type: none;
+}
+
+.footer-child a {
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    left: -30px;
+    line-height: 2rem;
+}
+
+.footer-child a:hover,
+a:focus {
+    color: #7c7f83;
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-inline: 10px;
+        padding: 16px 14px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo h4 {
+        left: 11px;
+        top: 0;
+        font-size: 22px;
+    }
+
+    .nav {
+        width: 120%;
+    }
+
+    .nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav nav {
+        width: 100%;
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px 16px;
+        left: 0;
+        top: 0;
+    }
+
+    .nav li a {
+        font-size: 14px;
+        left: 0;
+    }
+
+    .denticsHero {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 24px;
+    }
+
+    .denticsHeroText h1 {
+        font-size: 30px;
+    }
+
+    .denticsHeroButtons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .denticsGetStarted,
+    .denticsLearnMore {
+        width: 100%;
+    }
+
+    .denticsHeroImage {
+        width: 100%;
+        height: 420px;
+        min-height: 420px;
+    }
+
+    .denticsStepsSection {
+        padding: 20px 20px 40px;
+    }
+
+    .denticsSteps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .denticsStepItem {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .denticsProvideSection {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .denticsProvideText h2 {
+        font-size: 26px;
+    }
+
+    .denticsChecklist {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer-parent {
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        padding: 2rem 1.2rem;
+        margin-inline: 10px;
+    }
+
+    .footer-child:nth-child(2),
+    .footer-child:nth-child(3),
+    .footer-child:nth-child(4) {
+        position: static;
+        left: 0;
+        right: 0;
+    }
+
+    .footer-child:nth-child(3) p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav nav {
+        gap: 8px 12px;
+    }
+
+    .logo img {
+        width: 42px;
+    }
+
+    .denticsHeroText h1 {
+        font-size: 26px;
+    }
+
+    .denticsSectionTitle h2 {
+        font-size: 26px;
+    }
+}
