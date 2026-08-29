@@ -32,7 +32,17 @@ main {
     margin-inline: 22px;
     border-bottom: 1px solid rgb(194, 188, 188);
     padding: 20px;
+    line-height: normal;
 
+}
+
+.nav {
+    display: block;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
 }
 
 .nav nav {
@@ -50,9 +60,13 @@ main {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: 0.2s;
     display: inline-block;
+    line-height: normal;
+    position: relative;
+    left: -48px;
 
 }
 
@@ -76,6 +90,8 @@ a:focus {
     position: relative;
     left: 30px;
     top: 3px;
+    margin: 0;
+    line-height: normal;
     font-family: "Asap Sharp", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -606,6 +622,7 @@ a:focus {
 
     .nav li a {
         font-size: 13px;
+        left: 0;
     }
 
     .hero {
