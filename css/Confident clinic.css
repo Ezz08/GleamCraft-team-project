@@ -583,7 +583,7 @@ section4 {
     font-style: normal;
     color: white;
     position: relative;
-    left: 1px;
+    left: -30px;
     line-height: 2rem;
 }
 
@@ -596,9 +596,15 @@ a:focus {
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
+        gap: 18px;
         margin-inline: 10px;
         padding: 15px 10px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
     }
 
     .logo img {
@@ -607,6 +613,7 @@ a:focus {
 
     .logo h4 {
         left: 10px;
+        top: 0;
         font-size: 22px;
     }
 
@@ -615,9 +622,14 @@ a:focus {
     }
 
     .nav nav {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        align-items: center;
+        gap: 10px 16px;
+        position: static;
+        left: 0;
+        right: 0;
     }
 
     .nav li a {
