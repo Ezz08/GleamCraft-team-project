@@ -446,7 +446,8 @@ a:focus {
 }
 
 .denticsProvideImage img {
-    max-width: 320px;
+    max-width: 420px;
+    border: 10px solid #58c9e5;
 
     width: 100%;
 
