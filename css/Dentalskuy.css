@@ -400,6 +400,13 @@ h4 {
   margin-top: auto;
 }
 
+.service-item.gray .service-img {
+  position: relative;
+  top: -8rem;
+  left: -3rem;
+  margin-top: 0;
+}
+
 .service-main .service-img {
   max-height: 170px;
   width: 40%;
