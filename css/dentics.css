@@ -605,14 +605,12 @@ a:focus {
     }
 
     .nav nav {
-        width: 100%;
-        position: static;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 10px 16px;
-        left: 0;
+        left: 5rem;
         top: 0;
     }
 
