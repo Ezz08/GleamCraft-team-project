@@ -579,10 +579,6 @@ a:focus {
         gap: 14px;
     }
 
-    .header::after {
-        left: 10px;
-        right: 10px;
-    }
 
     .logo {
         width: 100%;
