@@ -223,7 +223,7 @@ a:focus {
     background-image: url(../img/WhatsApp\ Image\ 2026-08-27\ at\ 02.17.23.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    animation: img 5s infinite alternate;
+    animation: img 7s infinite alternate;
 
 }
 
@@ -356,18 +356,22 @@ section4 {
 
 .doctors:hover span {
     color: #e88b6b;
+    transform: translateY(-4px);
 }
 
 .country:hover span {
     color: #e88b6b;
+    transform: translateY(-4px);
 }
 
 .years:hover span {
     color: #e88b6b;
+    transform: translateY(-4px);
 }
 
 .partners:hover span {
     color: #e88b6b;
+    transform: translateY(-4px);
 }
 
 .section5 {
