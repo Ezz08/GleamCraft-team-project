@@ -568,7 +568,232 @@ a:focus {
 
 }
 
+/* Tablet Responsiveness: 769px to 972px */
+@media (min-width: 769px) and (max-width: 972px) {
+    .header {
+        width: 100%;
+        margin-inline: 0;
+        padding: 12px 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .logo h4 {
+        left: 10px;
+        top: 0;
+        font-size: 22px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px 14px;
+        position: relative;
+        left: 16rem;
+        
+    }
+
+    .nav li a {
+        font-size: 12px;
+        left: 0 !important;
+        white-space: nowrap;
+    }
+
+    .denticsHero {
+        flex-direction: row;
+        padding: 35px 25px;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .denticsHeroText {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .denticsHeroText h1 {
+        font-size: 26px;
+    }
+
+    .denticsHeroText p {
+        font-size: 13px;
+        max-width: 100%;
+    }
+
+    .denticsHeroButtons {
+        flex-direction: row;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .denticsGetStarted,
+    .denticsLearnMore {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+    .denticsHeroImage {
+        flex: 1;
+        height: 350px;
+        min-height: 350px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .denticsSectionTitle {
+        padding: 25px 15px 10px;
+    }
+
+    .denticsSectionTitle h2 {
+        font-size: 22px;
+    }
+
+    .denticsSectionTitle p {
+        font-size: 12px;
+    }
+
+    .denticsStepsSection {
+        padding: 25px 15px;
+    }
+
+    .denticsSteps {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .denticsStepItem {
+        flex: 1 1 calc(50% - 7.5px);
+        max-width: none;
+        padding: 15px;
+    }
+
+    .denticsStepItem i {
+        font-size: 22px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .denticsStepItem h3 {
+        font-size: 13px;
+    }
+
+    .denticsStepItem p {
+        font-size: 11px;
+    }
+
+    .denticsProvideSection {
+        flex-direction: row;
+        padding: 35px 25px;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .denticsProvideImage {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .denticsProvideImage img {
+        max-width: 100%;
+        width: 100%;
+        border-width: 4px;
+    }
+
+    .denticsProvideText {
+        flex: 1;
+    }
+
+    .denticsProvideText h2 {
+        font-size: 20px;
+    }
+
+    .denticsProvideText p {
+        font-size: 12px;
+    }
+
+    .denticsChecklist {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .denticsChecklist ul {
+        width: 100%;
+    }
+
+    .denticsBadgeOne,
+    .denticsBadgeTwo,
+    .denticsBadgeThree {
+        display: none;
+    }
+
+    .footer-parent {
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+        margin-inline: 10px;
+        border-radius: 10px;
+    }
+
+    .footer-child:nth-child(2),
+    .footer-child:nth-child(3),
+    .footer-child:nth-child(4) {
+        position: static !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
+
+    .footer-child:nth-child(3) p {
+        width: 100%;
+    }
+
+    .footer-child h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-child p {
+        font-size: 11px;
+    }
+
+    .footer-child a {
+        font-size: 11px;
+        left: 0 !important;
+    }
+}
+
 @media (max-width: 768px) {
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
     .header {
         width: 100%;
         margin: 0;
@@ -578,6 +803,8 @@ a:focus {
         align-items: center;
         gap: 14px;
     }
+
+
 
 
     .logo {
@@ -592,7 +819,7 @@ a:focus {
     }
 
     .nav {
-        width: 120%;
+        width: 100%;
     }
 
     .nav ul {
@@ -601,12 +828,14 @@ a:focus {
     }
 
     .nav nav {
+        width: 100%;
+        position: static;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 10px 16px;
-        left: 5rem;
+        left: 0;
         top: 0;
     }
 

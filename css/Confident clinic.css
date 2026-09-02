@@ -593,6 +593,283 @@ a:focus {
 
 }
 
+/* Tablet Responsiveness: 769px to 972px */
+@media (min-width: 769px) and (max-width: 972px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-inline: 10px;
+        padding: 12px 10px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .logo h4 {
+        left: 10px;
+        top: 0;
+        font-size: 22px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px 14px;
+        position: static !important;
+        left: 0 !important;
+        right: 0;
+    }
+
+    .nav li a {
+        font-size: 12px;
+        left: 0 !important;
+        white-space: nowrap;
+    }
+
+    .hero {
+        height: auto;
+        min-height: auto;
+        flex-direction: column;
+        gap: 25px;
+        padding: 40px 15px;
+    }
+
+    .txt,
+    .img {
+        width: 100%;
+    }
+
+    .txt h3 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .txt h1 {
+        width: 100% !important;
+        font-size: 28px;
+    }
+
+    .con-t {
+        width: 100% !important;
+        font-size: 13px;
+    }
+
+    .icon {
+        margin-left: 0;
+    }
+
+    .img {
+        height: auto;
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .about {
+        height: auto;
+        flex-direction: column;
+        gap: 25px;
+        padding: 40px 15px;
+    }
+
+    .about .image {
+        width: 100%;
+        max-width: 300px;
+        height: 350px;
+    }
+
+    .about .text {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about .text h4 {
+        font-size: 14px;
+    }
+
+    .about .text h2 {
+        font-size: 26px;
+    }
+
+    .about .text .con {
+        font-size: 13px;
+    }
+
+    .about .text ul li {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .about .text .read {
+        font-size: 13px;
+    }
+
+    section.bg-light {
+        padding: 30px 0 !important;
+    }
+
+    section.bg-light .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    section.bg-light .row {
+        margin-inline: 0;
+    }
+
+    section.bg-light .col-6,
+    section.bg-light .col-4 {
+        width: 100%;
+    }
+
+    .us {
+        width: calc(100% - 20px);
+        padding: 25px 10px;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 8px;
+    }
+
+    .doctors,
+    .country,
+    .years,
+    .partners {
+        width: 100%;
+    }
+
+    .doctors span,
+    .country span,
+    .years span,
+    .partners span {
+        font-size: 40px;
+    }
+
+    .doctors p,
+    .country p,
+    .years p,
+    .partners p {
+        font-size: 14px;
+    }
+
+    .section5 {
+        height: auto;
+        padding: 40px 15px;
+    }
+
+    .section5 .parent {
+        height: auto;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .section5 .review,
+    .section5 .cards {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section5 .review h4 {
+        font-size: 13px;
+    }
+
+    .section5 .review h2 {
+        width: 100% !important;
+        font-size: 24px;
+    }
+
+    .section5 .review .photo img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .section5 .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section5 .cards div {
+        width: 100% !important;
+        height: auto;
+        min-height: 200px;
+        padding: 15px;
+    }
+
+    .section5 .cards img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .section5 .cards p {
+        font-size: 12px;
+    }
+
+    .section5 .cards h5 {
+        font-size: 12px;
+    }
+
+    .section5 .cards h6 {
+        font-size: 10px;
+    }
+
+    .section5 .card1,
+    .section5 .card2,
+    .section5 .card3,
+    .section5 .card4 {
+        margin-top: 0 !important;
+    }
+
+    .footer-parent {
+        height: auto;
+        min-height: 0;
+        margin-inline: 10px;
+        padding: 1.5rem 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-child:nth-child(2),
+    .footer-child:nth-child(3),
+    .footer-child:nth-child(4) {
+        position: static !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
+
+    .footer-child:nth-child(3) p {
+        width: 100%;
+    }
+
+    .footer-child h3 {
+        font-size: 1.4rem;
+    }
+
+    .footer-child h2 {
+        font-size: 1.1rem;
+    }
+
+    .footer-child a {
+        font-size: 12px;
+        left: 0 !important;
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
