@@ -642,6 +642,109 @@ a:focus {
     left: -3rem;
 }
 
+.faq-section {
+    background-color: #F0F1F2;
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-title h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 56px;
+    font-weight: 700;
+    color: #020202;
+    margin-bottom: 10px;
+}
+
+.faq-title p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #333;
+}
+
+
+/* Accordion */
+
+.accordion-item {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+/* Question */
+
+.accordion-button {
+    width: 100%;
+    border: none;
+    padding: 20px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #184b93;
+    color: white;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+.accordion-button:hover {
+    background-color: #29599b;
+}
+
+.accordion-button:focus {
+    outline: none;
+}
+
+.faq-icon {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+/* Answer */
+
+.faq-answer {
+    display: none;
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+.accordion-body {
+    padding: 20px 25px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 .footer-parent {
     background-color: black;
     border-radius: 20px;
