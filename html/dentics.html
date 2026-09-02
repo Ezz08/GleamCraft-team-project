@@ -249,6 +249,40 @@
 
         </section>
 
+        <!-- Search Box Hidden -->
+        <div id="searchContainer" class="container mt-4 d-none">
+            <div class="p-4 bg-white shadow rounded-4 border">
+                <h5 class="fw-bold text-center mb-3 text-info">Find Available Appointments</h5>
+
+                <form id="slideSearchForm" class="row g-3">
+
+                    <div class="col-md-4">
+                        <label class="form-label small fw-bold">Phone</label>
+                        <input type="tel" id="slidePhone" class="form-control" placeholder="01xxxxxxxxx">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label small fw-bold">Date</label>
+                        <input type="date" id="slideDate" class="form-control">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label small fw-bold">Slot</label>
+                        <select id="slideTime" class="form-select">
+                            <option value="" selected disabled>Select Time</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="02:00 PM">02:00 PM</option>
+                            <option value="06:00 PM">06:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn btn-info text-white w-100 fw-bold">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
 
         <!-- PROVIDE -->
 
@@ -642,7 +676,7 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/book.js"></script>
 
 </body>
 
