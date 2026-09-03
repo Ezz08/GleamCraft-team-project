@@ -1,3 +1,15 @@
+:root {
+    --bg-color: #F0F1F2;
+    --primary-color: rgb(102, 102, 239);
+    --text-color: rgb(75, 75, 75);
+    --white-color: white;
+    --black-color: black;
+    --border-color: rgb(194, 188, 188);
+    --dark-text-color: #1f1f1f;
+    --paragraph-color: #3a3a3a;
+    --muted-color: #7c7f83;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +21,7 @@ html {
 }
 
 body {
-    background-color: #F0F1F2;
+    background-color: var(--bg-color);
     overflow-x: hidden;
 }
 
@@ -18,7 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-inline: 22px;
-    border-bottom: 1px solid rgb(194, 188, 188);
+    border-bottom: 1px solid var(--border-color);
     padding: 20px;
 }
 
@@ -32,7 +44,7 @@ body {
 }
 
 .nav li a {
-    color: rgb(75, 75, 75);
+    color: var(--text-color);
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -44,7 +56,7 @@ body {
 
 nav a:hover,
 a:focus {
-    color: rgb(102, 102, 239);
+    color: var(--primary-color);
     transform: translateY(-2px);
 }
 
@@ -95,7 +107,7 @@ a:focus {
 }
 
 .home .row .con-t h1 {
-    color: rgb(102, 102, 239);
+    color: var(--primary-color);
     margin-bottom: 20px;
     font-size: clamp(2.7rem, 4vw, 4.3rem);
     line-height: 1.1;
@@ -133,7 +145,7 @@ a:focus {
 
 .home .btn {
     margin-top: 0;
-    color: rgb(102, 102, 239);
+    color: var(--primary-color);
     border-radius: 50px;
     font-size: 1.05rem;
     background-color: #dfe7f5;
@@ -149,7 +161,7 @@ a:focus {
 .home .btn:focus-visible,
 .about .btn:focus-visible,
 .contant .btn:focus-visible {
-    color: #1f1f1f;
+    color: var(--dark-text-color);
     background-color: #d2dff7;
     box-shadow: 0 4px 12px rgba(75, 93, 151, 0.12);
     transform: translateY(-1px);
@@ -160,7 +172,7 @@ a:focus {
     display: flex;
     align-items: center;
     gap: 30px;
-    color: rgb(102, 102, 239);
+    color: var(--primary-color);
     background: linear-gradient(135deg, #dff2ff, #ecf7ff);
     box-sizing: border-box;
     margin: 40px auto 20px;
@@ -189,7 +201,7 @@ a:focus {
     line-height: 1.7;
     font-style: normal;
     margin-top: 8px;
-    color: #3a3a3a;
+    color: var(--paragraph-color);
 }
 
 .container .con-i img {
@@ -211,7 +223,7 @@ a:focus {
 }
 
 .about .parent .con-t h2 {
-    color: rgb(102, 102, 239);
+    color: var(--primary-color);
     margin-bottom: 22px;
     font-size: clamp(2.2rem, 3vw, 3.5rem);
     line-height: 1.1;
@@ -231,8 +243,8 @@ a:focus {
 
 .about .btn {
     display: inline-block;
-    color: white;
-    background-color: rgb(102, 102, 239);
+    color: var(--white-color);
+    background-color: var(--primary-color);
     border-radius: 50px;
     margin-top: 0;
     font-size: 1rem;
@@ -280,7 +292,7 @@ a:focus {
 }
 
 .container h2 {
-    color: rgb(102, 102, 239);
+    color: var(--primary-color);
     font-size: clamp(2rem, 3vw, 3.2rem);
     font-weight: 600;
     text-align: center;
@@ -321,7 +333,7 @@ a:focus {
 }
 
 .services .card h3 {
-    color: white;
+    color: var(--white-color);
     font-size: 1.2rem;
     line-height: 1.4;
     margin: 0;
@@ -352,7 +364,7 @@ a:focus {
 }
 
 .us .parent1 .con-t h2 {
-    color: rgb(102, 102, 239);
+    color: var(--primary-color);
     margin-bottom: 20px;
     font-size: clamp(2.2rem, 3vw, 3.5rem);
     line-height: 1.1;
@@ -439,7 +451,7 @@ a:focus {
 }
 
 .contant .row1 .con-t h2 {
-    color: rgb(102, 102, 239);
+    color: var(--primary-color);
     margin-bottom: 20px;
     font-size: clamp(2.1rem, 3vw, 3.2rem);
     line-height: 1.1;
@@ -464,8 +476,8 @@ a:focus {
 }
 
 .contant .btn {
-    color: white;
-    background-color: rgb(102, 102, 239);
+    color: var(--white-color);
+    background-color: var(--primary-color);
     border-radius: 50px;
     margin-top: 24px;
     font-size: 1rem;
@@ -489,11 +501,11 @@ a:focus {
 }
 
 .footer-parent {
-    background-color: black;
+    background-color: var(--black-color);
     border-radius: 20px;
     margin-inline: 20px;
     height: 68vh;
-    color: white;
+    color: var(--white-color);
     display: flex;
     justify-content: space-between;
     padding: 5rem 0 1rem 2rem;
@@ -565,12 +577,12 @@ a:focus {
     position: relative;
     left: 1px;
     line-height: 2rem;
-    color: white;
+    color: var(--white-color);
 }
 
 .footer-child a:hover,
 a:focus {
-    color: #7c7f83;
+    color: var(--muted-color);
 }
 
 /* Tablet Responsiveness: 769px to 972px */
@@ -908,4 +920,3 @@ a:focus {
         width: 100%;
     }
 }
-

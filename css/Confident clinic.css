@@ -4,18 +4,29 @@
     box-sizing: border-box;
 }
 
-html{
+:root {
+    --bg-color: #F0F1F2;
+    --orange: #d28a5c;
+    --text-gray: #555;
+    --cyan-border: #36b9d1;
+    --light-orange: #df8b64;
+    --blue: #2772bd;
+    --hover-orange: #e88b6b;
+    --white: white;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #F0F1F2 !important;
+    background-color: var(--bg-color) !important;
     overflow-x: hidden;
 }
 
 section.bg-light {
-    background-color: #F0F1F2 !important;
+    background-color: var(--bg-color) !important;
 }
 
 main {
@@ -119,7 +130,7 @@ a:focus {
 }
 
 .txt h3 {
-    color: #d28a5c;
+    color: var(--orange);
     font-size: 20px;
     letter-spacing: 3px;
     margin-bottom: 35px;
@@ -141,7 +152,7 @@ a:focus {
 }
 
 .con-t {
-    color: #555;
+    color: var(--text-gray);
     font-size: 18px;
     line-height: 1.8;
     width: 620px;
@@ -153,7 +164,7 @@ a:focus {
 .butt {
     border: none;
     background-color: #147bd1;
-    color: white;
+    color: var(--white);
     padding: 13px 34px;
     border-radius: 30px;
     font-size: 15px;
@@ -174,12 +185,12 @@ a:focus {
 .icon i {
     width: 45px;
     height: 45px;
-    border: 1px solid #d28a5c;
+    border: 1px solid var(--orange);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #d28a5c;
+    color: var(--orange);
     font-size: 15px;
 }
 
@@ -287,7 +298,7 @@ a:focus {
 .about .text ul li {
     display: inline-block;
     width: 45%;
-    color: #555;
+    color: var(--text-gray);
     font-size: 16px;
     margin-bottom: 20px;
 }
@@ -310,10 +321,10 @@ section4 {
 .us {
     width: 90%;
     margin: auto;
-    border: 2px solid #36b9d1;
+    border: 2px solid var(--cyan-border);
     border-radius: 0;
     padding: 50px 0;
-    border-bottom: 2px solid #36b9d1;
+    border-bottom: 2px solid var(--cyan-border);
     position: relative;
     z-index: 1;
 
@@ -355,22 +366,22 @@ section4 {
 /* Hover */
 
 .doctors:hover span {
-    color: #e88b6b;
+    color: var(--hover-orange);
     transform: translateY(-4px);
 }
 
 .country:hover span {
-    color: #e88b6b;
+    color: var(--hover-orange);
     transform: translateY(-4px);
 }
 
 .years:hover span {
-    color: #e88b6b;
+    color: var(--hover-orange);
     transform: translateY(-4px);
 }
 
 .partners:hover span {
-    color: #e88b6b;
+    color: var(--hover-orange);
     transform: translateY(-4px);
 }
 
@@ -378,7 +389,7 @@ section4 {
     display: block;
     width: 100%;
     height: 100vh;
-    background-color: #F0F1F2;
+    background-color: var(--bg-color);
     padding: 80px 100px;
 }
 
@@ -401,7 +412,7 @@ section4 {
 }
 
 .section5 .review h4 {
-    color: #df8b64;
+    color: var(--light-orange);
     font-size: 16px;
     letter-spacing: 2px;
     margin-bottom: 30px;
@@ -416,7 +427,7 @@ section4 {
 }
 
 .section5 .review h2 span {
-    color: #2772bd;
+    color: var(--blue);
 }
 
 .section5 .review .photo {
@@ -464,7 +475,7 @@ section4 {
 /* Stars */
 
 .section5 .cards i {
-    color: #df8b64;
+    color: var(--light-orange);
     font-size: 15px;
     margin-right: 3px;
 }
@@ -472,7 +483,7 @@ section4 {
 /* Text */
 
 .section5 .cards p {
-    color: #555555;
+    color: var(--text-gray);
     font-size: 14px;
     line-height: 1.6;
     margin-top: 15px;
@@ -480,7 +491,7 @@ section4 {
 }
 
 .section5 .cards h5 {
-    color: #2772bd;
+    color: var(--blue);
     font-size: 14px;
     margin: 0 0 4px 0;
 }
@@ -515,7 +526,7 @@ section4 {
     border-radius: 20px;
     margin-inline: 20px;
     height: 68vh;
-    color: white;
+    color: var(--white);
     display: flex;
     justify-content: space-between;
     padding: 5rem 0 1rem 2rem;
@@ -585,7 +596,7 @@ section4 {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: var(--white);
     position: relative;
     left: -30px;
     line-height: 2rem;
@@ -1097,5 +1108,3 @@ a:focus {
         position: static;
     }
 }
-
-

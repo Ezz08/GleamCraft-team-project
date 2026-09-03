@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+  --bg-color: #F0F1F2;
+  --text-dark: #141727;
+  --primary-purple: #5b72ee;
+  --dark-blue: #1e2238;
+  --white: #ffffff;
+  --border-light: #e5e7eb;
+  --text-muted: #6b7280;
+  --card-bg: #eaf2ff;
+  --border-white-transparent: rgba(255, 255, 255, 0.15);
+  --green: #b1fd38;
+  --shadow-light: rgba(0, 0, 0, 0.02);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +27,7 @@ html {
 }
 
 body {
-  background-color: #F0F1F2;
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -21,7 +35,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  color: #141727;
+  color: var(--text-dark);
   font-family: "Poppins", sans-serif;
 }
 
@@ -43,7 +57,7 @@ main,
 .services-section,
 .about-section,
 .review-section {
-  background-color: #F0F1F2;
+  background-color: var(--bg-color);
 }
 
 /* Header */
@@ -106,7 +120,7 @@ a:focus {
 
 .main-con {
   width: 100%;
-  background-color: #F0F1F2;
+  background-color: var(--bg-color);
   padding: 30px 50px 0 50px;
   flex: 1;
 }
@@ -114,7 +128,7 @@ a:focus {
 .services-section,
 .about-section,
 .review-section {
-  background-color: #F0F1F2;
+  background-color: var(--bg-color);
 }
 
 .navbar {
@@ -131,13 +145,13 @@ a:focus {
 }
 
 .logo-icon {
-  color: #5b72ee;
+  color: var(--primary-purple);
   font-size: 20px;
 }
 
 .btn-login {
-  background-color: #1e2238;
-  color: #fff;
+  background-color: var(--dark-blue);
+  color: var(--white);
   border: none;
   padding: 10px 24px;
   border-radius: 20px;
@@ -163,7 +177,7 @@ a:focus {
   font-size: 60px;
   line-height: 1;
   font-weight: 500;
-  color: #141727;
+  color: var(--text-dark);
   margin-bottom: 28px;
 }
 
@@ -175,8 +189,8 @@ h4 {
 }
 
 .btn-book {
-  background-color: #1e2238;
-  color: #ffff;
+  background-color: var(--dark-blue);
+  color: var(--white)f;
   border: none;
   padding: 14px 30px;
   border-radius: 24px;
@@ -187,14 +201,14 @@ h4 {
 }
 
 .subtext-con {
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--border-light);
   padding-top: 16px;
   max-width: 240px;
 }
 
 .subtext-con p {
   font-size: 12px;
-  color: #6b7280;
+  color: var(--text-muted);
   font-weight: 500;
 }
 
@@ -211,7 +225,7 @@ h4 {
   max-width: 330px;
   border-radius: 28px 28px 0 0;
   overflow: hidden;
-  background-color: #eaf2ff;
+  background-color: var(--card-bg);
 }
 
 .dr img {
@@ -229,10 +243,10 @@ h4 {
   transform: translateX(-50%);
   width: 82%;
   background: rgba(30, 34, 56, .65);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--border-white-transparent);
   padding: 14px 20px;
   border-radius: 16px;
-  color: #ffffff;
+  color: var(--white);
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -268,14 +282,14 @@ h4 {
 
 .green {
   height: 220px;
-  background-color: #b1fd38;
-  color: #141727;
+  background-color: var(--green);
+  color: var(--text-dark);
 }
 
 .blue {
   height: 175px;
-  background-color: #5b72ee;
-  color: #ffffff;
+  background-color: var(--primary-purple);
+  color: var(--white);
 }
 
 .contain {
@@ -288,7 +302,7 @@ h4 {
 .arrow-icon {
   width: 36px;
   height: 36px;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -308,13 +322,13 @@ h4 {
 
 .services-section {
   padding: 80px 5%;
-  background-color: #F0F1F2;
+  background-color: var(--bg-color);
 }
 
 .service-title h2 {
   font-size: 38px;
   font-weight: 500;
-  color: #141727;
+  color: var(--text-dark);
   margin-bottom: 40px;
   text-align: center;
 }
@@ -373,7 +387,7 @@ h4 {
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  color: #fff;
+  color: var(--white);
   min-height: 330px;
   box-sizing: border-box;
 }
@@ -431,14 +445,14 @@ h4 {
 
 .about-section {
   padding: 60px 20px;
-  background-color: #F0F1F2;
+  background-color: var(--bg-color);
 }
 
 .about-title h2 {
   text-align: center;
   font-size: 36px;
   font-weight: 500;
-  color: #141727;
+  color: var(--text-dark);
   margin: 40px;
 }
 
@@ -475,7 +489,7 @@ h4 {
   border-radius: 28px;
   overflow: hidden;
   width: 100%;
-  background-color: #eaf2ff;
+  background-color: var(--card-bg);
 }
 
 .dr-card img {
@@ -494,19 +508,19 @@ h4 {
   background-color: rgba(255, 255, 255, 0.65);
   padding: 12px 15px;
   border-radius: 0;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--border-white-transparent);
   z-index: 2;
 }
 
 .dr-card .dr-info h3 {
-  color: #141727;
+  color: var(--text-dark);
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 2px;
 }
 
 .dr-card .dr-info p {
-  color: #6b7280;
+  color: var(--text-muted);
   font-size: 12px;
   font-weight: 500;
 }
@@ -514,18 +528,18 @@ h4 {
 .info-card {
   border-radius: 24px;
   padding: 24px;
-  color: #fff;
+  color: var(--white);
   font-size: 13px;
   line-height: 1.5;
 }
 
 .info-card.blue {
-  background-color: #5b72ee;
+  background-color: var(--primary-purple);
 }
 
 .info-card.green {
-  background-color: #b1fd38;
-  color: #141727;
+  background-color: var(--green);
+  color: var(--text-dark);
   height: 100%;
   display: block;
   padding: 32px;
@@ -538,7 +552,7 @@ h4 {
 .our-values h3 {
   font-size: 18px;
   font-weight: 500;
-  color: #141727;
+  color: var(--text-dark);
   margin-bottom: 12px;
 }
 
@@ -555,21 +569,21 @@ h4 {
   border-radius: 50px;
   font-size: 12px;
   font-weight: 600;
-  color: #141727;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  color: var(--text-dark);
+  box-shadow: 0 2px 5px var(--shadow-light);
 }
 
 /* review Section */
 
 .review-section {
   padding: 80px 5%;
-  background-color: #F0F1F2;
+  background-color: var(--bg-color);
 }
 
 .rtitle h2 {
   font-size: 38px;
   font-weight: 500;
-  color: #141727;
+  color: var(--text-dark);
   margin-bottom: 50px;
   text-align: left;
   max-width: 400px;
@@ -586,14 +600,14 @@ h4 {
 
 .review {
   width: 31%;
-  background-color: #F0F1F2;
-  border: 1px solid #e5e7eb;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-light);
   border-radius: 24px;
   padding: 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 4px 15px var(--shadow-light);
   min-height: 260px;
   font-size: 14px;
   font-weight: 500;
@@ -610,7 +624,7 @@ h4 {
   display: flex;
   align-items: center;
   gap: 12px;
-  background-color: #5b72ee;
+  background-color: var(--primary-purple);
   padding: 10px 16px;
   border-radius: 50px;
   width: fit-content;
@@ -631,7 +645,7 @@ h4 {
 .client-name {
   font-size: 13px;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
 }
 
 .client-role {
@@ -719,7 +733,7 @@ footer {
 }
 
 .footer-child a {
-  color: #ffffff;
+  color: var(--white);
   font-size: 1rem;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
