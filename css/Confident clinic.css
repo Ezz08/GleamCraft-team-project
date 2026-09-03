@@ -1110,10 +1110,10 @@ a:focus {
 }
 
 /* =========================================
-   Responsive: 973px -> 1124px
+   Responsive: 973px -> 1241px
    ========================================= */
 
-@media (min-width: 973px) and (max-width: 1124px) {
+@media (min-width: 973px) and (max-width: 1241px) {
 
     body {
         overflow-x: hidden;
@@ -1127,7 +1127,7 @@ a:focus {
     }
 
     .nav nav {
-        gap: 22px;
+        gap: 25px;
     }
 
     .nav li a {
@@ -1151,8 +1151,8 @@ a:focus {
         width: 100%;
         height: auto;
         min-height: 650px;
-        padding: 50px 40px;
-        gap: 30px;
+        padding: 50px 45px;
+        gap: 35px;
     }
 
     .txt {
@@ -1168,21 +1168,32 @@ a:focus {
     .txt h1 {
         width: 100%;
         max-width: 520px;
-        font-size: 45px;
+        font-size: 48px;
         line-height: 1.1;
         margin-bottom: 25px;
     }
 
     .con-t {
         width: 100%;
-        max-width: 500px;
+        max-width: 520px;
         font-size: 15px;
         line-height: 1.7;
         margin-bottom: 25px;
     }
 
+    .butt {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+
     .icon {
         margin-left: 20px;
+        gap: 10px;
+    }
+
+    .icon i {
+        width: 42px;
+        height: 42px;
     }
 
     .icon p {
@@ -1197,7 +1208,7 @@ a:focus {
 
     .img img {
         width: 100%;
-        max-width: 500px;
+        max-width: 520px;
         height: auto;
     }
 
@@ -1208,7 +1219,7 @@ a:focus {
         width: 100%;
         height: auto;
         min-height: 650px;
-        padding: 60px 40px;
+        padding: 60px 45px;
         gap: 35px;
     }
 
@@ -1230,7 +1241,7 @@ a:focus {
     }
 
     .about .text h2 {
-        font-size: 34px;
+        font-size: 36px;
         line-height: 1.2;
         margin-bottom: 20px;
     }
@@ -1249,6 +1260,10 @@ a:focus {
         width: 48%;
         font-size: 14px;
         margin-bottom: 15px;
+    }
+
+    .about .text .read {
+        font-size: 14px;
     }
 
 
@@ -1275,7 +1290,7 @@ a:focus {
     .country span,
     .years span,
     .partners span {
-        font-size: 50px;
+        font-size: 55px;
     }
 
     .doctors p,
@@ -1291,13 +1306,15 @@ a:focus {
     .section5 {
         height: auto;
         min-height: 700px;
-        padding: 60px 40px;
+        padding: 60px 45px;
     }
 
     .section5 .parent {
         height: auto;
         min-height: 600px;
-        gap: 30px;
+        gap: 35px;
+        display: flex;
+        flex-direction: row;
     }
 
     .section5 .review {
@@ -1315,7 +1332,7 @@ a:focus {
 
     .section5 .review h2 {
         width: 100%;
-        font-size: 32px;
+        font-size: 36px;
         line-height: 1.2;
         margin-bottom: 30px;
     }
@@ -1331,17 +1348,30 @@ a:focus {
     }
 
 
+    /* ================= REVIEW CARDS ================= */
+
     .section5 .cards {
         width: 58%;
         height: auto;
         padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
         gap: 20px;
+        align-content: flex-start;
     }
 
     .section5 .cards div {
         width: calc(50% - 10px);
         height: 230px;
-        padding: 15px;
+        padding: 18px;
+        margin-top: 0 !important;
+    }
+
+    .section5 .card1,
+    .section5 .card2,
+    .section5 .card3,
+    .section5 .card4 {
+        margin-top: 0 !important;
     }
 
     .section5 .cards img {
@@ -1369,24 +1399,6 @@ a:focus {
         font-size: 10px;
     }
 
-    /* نخلي ترتيب الكروت مناسب للمساحة */
-
-    .section5 .card1 {
-        margin-top: 20px;
-    }
-
-    .section5 .card2 {
-        margin-top: 0;
-    }
-
-    .section5 .card3 {
-        margin-top: 20px;
-    }
-
-    .section5 .card4 {
-        margin-top: 0;
-    }
-
 
     /* ================= FOOTER ================= */
 
@@ -1394,7 +1406,7 @@ a:focus {
         height: auto;
         min-height: 450px;
         margin-inline: 15px;
-        padding: 50px 30px 30px;
+        padding: 50px 35px 30px;
         gap: 30px;
     }
 

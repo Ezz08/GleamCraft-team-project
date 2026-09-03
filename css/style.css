@@ -1489,10 +1489,10 @@ a:focus {
 }
 
 /* =========================================
-   RESPONSIVE: 973px - 1124px
+   RESPONSIVE: 973px - 1241px
    ========================================= */
 
-@media (min-width: 973px) and (max-width: 1124px) {
+@media (min-width: 973px) and (max-width: 1241px) {
 
     body {
         overflow-x: hidden;
@@ -1506,11 +1506,11 @@ a:focus {
     }
 
     .nav nav {
-        gap: 20px;
+        gap: clamp(18px, 2.5vw, 32px);
     }
 
     .nav li a {
-        font-size: 16px;
+        font-size: clamp(15px, 1.4vw, 18px);
     }
 
     .logo img {
@@ -1519,7 +1519,7 @@ a:focus {
 
     .logo h4 {
         left: 15px;
-        font-size: 25px;
+        font-size: clamp(23px, 2vw, 27px);
     }
 
 
@@ -1527,55 +1527,60 @@ a:focus {
 
     .hero_parent {
         margin-inline: 30px;
-        gap: 40px;
+        gap: clamp(35px, 5vw, 70px);
         top: 2rem;
         margin-bottom: 12rem;
         align-items: center;
     }
 
-    .herochild {
+    .herochild,
+    .herochild2 {
         width: 50%;
+        min-width: 0;
     }
 
     .herochild p {
         width: 80%;
         left: 0;
         top: 0;
-        font-size: 13px;
+        font-size: clamp(12px, 1.1vw, 15px);
     }
 
     .herochild h1 {
-        font-size: 7rem;
-        letter-spacing: 7px;
+        font-size: clamp(6rem, 9vw, 9rem);
+        letter-spacing: clamp(5px, 0.6vw, 9px);
     }
 
-    .herochild img{
+    .herochild img {
+        width: 100%;
         max-width: 500px;
+        height: auto;
     }
 
     .herochild2 {
-        width: 50%;
         position: relative;
-        top: 6rem;
-        left: 2rem;
+        top: 4rem;
+        left: 0;
     }
 
     .herochild2 img {
         position: static;
         width: 100%;
-        max-width: 400px;
+        max-width: 450px;
+        height: auto;
     }
 
     .herochild2 p {
         position: static;
         width: 90%;
-        font-size: 13px;
+        font-size: clamp(12px, 1.1vw, 15px);
+        margin-top: 10px;
     }
 
     .herochild2 h1 {
         position: static;
-        font-size: 7rem;
-        letter-spacing: 7px;
+        font-size: clamp(6rem, 9vw, 9rem);
+        letter-spacing: clamp(5px, 0.6vw, 9px);
     }
 
 
@@ -1592,24 +1597,24 @@ a:focus {
     }
 
     .yellow-box p {
-        top: 120px;
-        right: 90px;
-        width: 28%;
+        top: clamp(100px, 10vw, 140px);
+        right: clamp(50px, 7vw, 90px);
+        width: clamp(250px, 27%, 330px);
         padding: 1.2rem;
-        font-size: 13px;
+        font-size: clamp(12px, 1.1vw, 14px);
     }
 
     .blue-box {
         left: 45%;
-        top: 15rem;
+        top: clamp(14rem, 17vw, 18rem);
         width: 48%;
-        padding-bottom: 15rem;
+        padding-bottom: clamp(12rem, 15vw, 17rem);
     }
 
     .blue-box h2 {
-        top: 4rem;
+        top: clamp(3rem, 5vw, 5rem);
         left: 15px;
-        font-size: 1.8rem;
+        font-size: clamp(1.6rem, 2.3vw, 2.2rem);
     }
 
     .blue-box h4 {
@@ -1628,11 +1633,11 @@ a:focus {
     }
 
     .OurClinics h1 {
-        font-size: 4rem;
+        font-size: clamp(3.5rem, 5vw, 5rem);
     }
 
     .clinics {
-        gap: 25px;
+        gap: clamp(20px, 3vw, 40px);
         justify-content: center;
     }
 
@@ -1651,7 +1656,7 @@ a:focus {
     .clinic-3,
     .clinic-4 {
         width: 100%;
-        padding: 2.5rem;
+        padding: clamp(2rem, 3vw, 3rem);
         border-radius: 25px;
     }
 
@@ -1659,7 +1664,7 @@ a:focus {
     .clinic-2 h2,
     .clinic-3 h2,
     .clinic-4 h2 {
-        font-size: 1.8rem;
+        font-size: clamp(1.6rem, 2vw, 2rem);
         right: 0;
         top: -1.5rem;
     }
@@ -1668,7 +1673,7 @@ a:focus {
     .clinic-2 a,
     .clinic-3 a,
     .clinic-4 a {
-        font-size: 1.5rem;
+        font-size: clamp(1.3rem, 1.7vw, 1.6rem);
         right: 0;
         bottom: -1.5rem;
     }
@@ -1682,12 +1687,12 @@ a:focus {
     }
 
     .stories h1 {
-        font-size: 4rem;
+        font-size: clamp(3.5rem, 5vw, 5rem);
         margin-bottom: 4rem;
     }
 
     .cards {
-        gap: 15px;
+        gap: clamp(12px, 1.5vw, 20px);
         align-items: stretch;
     }
 
@@ -1696,17 +1701,18 @@ a:focus {
     }
 
     .card {
-        padding: 3rem 1rem;
+        padding: clamp(2.5rem, 3vw, 3.5rem) 1rem;
         flex: 1;
+        min-width: 0;
     }
 
     .card p:first-child {
         width: 90%;
-        font-size: 12px;
+        font-size: clamp(11px, 1vw, 13px);
     }
 
     .card p:last-child {
-        font-size: 12px;
+        font-size: clamp(11px, 1vw, 13px);
     }
 
 
@@ -1714,7 +1720,7 @@ a:focus {
 
     .progress {
         margin-inline: 25px;
-        padding: 7rem 0;
+        padding: clamp(6rem, 8vw, 8rem) 0;
         border-radius: 20px;
     }
 
@@ -1726,29 +1732,30 @@ a:focus {
 
     .texts h2 {
         width: 45%;
-        font-size: 3.5rem;
+        font-size: clamp(3rem, 4vw, 4rem);
         top: 0;
     }
 
     .texts p {
         width: 45%;
         bottom: 0;
-        font-size: 13px;
+        font-size: clamp(12px, 1.1vw, 14px);
     }
 
     .progress_cards {
         margin-inline: 25px;
-        gap: 15px;
+        gap: clamp(12px, 1.5vw, 20px);
         bottom: -5rem;
     }
 
     .progress-card {
-        padding: 2rem 2.5rem;
+        padding: clamp(1.7rem, 2.5vw, 2.5rem);
         flex: 1;
+        min-width: 0;
     }
 
     .progress-card h2 {
-        font-size: 2.5rem !important;
+        font-size: clamp(2.2rem, 3vw, 3rem) !important;
         left: 0 !important;
         top: 0 !important;
     }
@@ -1756,7 +1763,7 @@ a:focus {
     .progress-card p {
         left: 0 !important;
         bottom: 0 !important;
-        font-size: 12px;
+        font-size: clamp(11px, 1vw, 13px);
     }
 
 
@@ -1771,17 +1778,17 @@ a:focus {
     }
 
     .faq-title h2 {
-        font-size: 3.5rem;
+        font-size: clamp(3rem, 4.5vw, 4rem);
     }
 
     .accordion-button {
         padding: 18px 20px;
-        font-size: 16px;
+        font-size: clamp(15px, 1.3vw, 17px);
     }
 
     .accordion-body {
         padding: 18px 20px;
-        font-size: 14px;
+        font-size: clamp(13px, 1.1vw, 15px);
     }
 
 
@@ -1792,7 +1799,7 @@ a:focus {
         height: auto;
         min-height: 500px;
         padding: 4rem 2rem 2rem;
-        gap: 30px;
+        gap: clamp(20px, 3vw, 40px);
     }
 
     .footer-child:nth-child(2),

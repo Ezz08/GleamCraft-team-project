@@ -407,239 +407,179 @@
     }
 }
 
-/* =========================
-   SIGN UP RESPONSIVE
-   973px to 1124px
-   ========================= */
+/* =========================================
+   SIGN UP - 973px to 1241px
+   Fix Terms + Have an account
+   ========================================= */
 
-@media (min-width: 973px) and (max-width: 1124px) {
+@media (min-width: 973px) and (max-width: 1241px) {
 
     .parent-login {
         width: 100%;
-        height: 100vh;
         min-height: 100vh;
-
+        height: 100vh;
         display: flex;
         flex-direction: row;
         align-items: stretch;
-
         overflow: hidden;
     }
-
 
     /* ================= FORM ================= */
 
     .form {
         width: 50%;
         height: 100%;
-
-        position: static;
-
+        left: 0;
         padding: 30px 45px;
-
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        /* مهم جداً */
         justify-content: center;
-
-        gap: 12px;
-
+        gap: 1rem;
         flex-shrink: 0;
     }
 
-
     .form h1 {
         font-size: 2.2rem;
-
-        position: static;
-
-        margin: 0 0 8px 0;
+        top: 0;
+        margin: 0 0 10px 0;
     }
-
-
-    /* ================= INPUTS ================= */
 
     .form-1 {
         width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-
-        gap: 12px;
+        gap: 1rem;
     }
 
     .form-1 label {
-        position: static;
-
         font-size: 14px;
-        margin-left: 3px;
+        top: 0;
+        left: 0;
     }
 
     .form-1 input {
         width: 100%;
-
         padding: 10px;
-
         border-radius: 10px;
-
         font-size: 14px;
     }
-
 
     /* ================= TERMS ================= */
 
     .terms {
         width: 100%;
-
         display: flex;
         align-items: center;
-
-        gap: 5px;
-
-        font-size: 11px;
-
+        justify-content: flex-start;
+        gap: 7px;
+        margin: 0;
+        padding: 0;
         position: static;
-
-        margin-top: 3px;
+        font-size: 12px;
     }
 
     .terms input {
         position: static;
-
         margin: 0;
-
-        width: auto;
-        height: auto;
-
+        width: 14px;
+        height: 14px;
         flex-shrink: 0;
     }
 
+    .terms label {
+        margin: 0;
+        padding: 0;
+        position: static;
+        font-size: 12px;
+        line-height: 1.4;
+    }
 
     /* ================= SIGN UP BUTTON ================= */
 
     .signup {
         width: 100%;
-
-        position: static;
-
-        padding: 11px;
-
-        margin: 5px 0 0 0;
-
+        top: 0;
+        padding: 12px;
         font-size: 14px;
+        margin: 0;
     }
-
 
     /* ================= OR ================= */
 
     .center {
         width: 100%;
-
-        position: static;
-
+        top: 0;
+        margin: 0;
         text-align: center;
-
-        margin-top: 5px;
     }
 
     .or {
-        font-size: 13px;
+        font-size: 14px;
     }
-
 
     /* ================= GOOGLE / APPLE ================= */
 
     .signin {
         width: 100%;
-
         display: flex;
-        flex-direction: row;
-
         gap: 10px;
-
-        position: static;
-
+        top: 0;
         margin: 0;
-
-        flex-shrink: 0;
     }
 
     .google,
     .apple {
         width: 50%;
-        min-height: 42px;
-
-        display: flex;
-
+        min-height: 45px;
         align-items: center;
         justify-content: center;
-
-        gap: 7px;
-
-        border-radius: 8px;
+        gap: 8px;
     }
 
     .google img,
     .apple img {
-        width: 21px;
-
-        position: static;
+        width: 22px;
+        left: 0;
     }
 
     .google p,
     .apple p {
-        position: static;
-
+        font-size: 12px;
+        top: 0;
         margin: 0;
-
-        font-size: 11px;
     }
-
 
     /* ================= HAVE AN ACCOUNT ================= */
 
     .ques {
         width: 100%;
-
         position: static;
-
         display: flex;
-
         justify-content: center;
         align-items: center;
-
         gap: 5px;
-
-        margin-top: 5px;
+        margin: 5px 0 0 0;
+        padding: 0;
     }
 
     .ques p,
     .ques a {
-        font-size: 11px;
+        font-size: 12px;
+        margin: 0;
     }
-
 
     /* ================= IMAGE ================= */
 
     .big-image {
         width: 50%;
         height: 100%;
-
         flex-shrink: 0;
-
         overflow: hidden;
     }
 
     .big-image img {
         width: 100%;
         height: 100%;
-
-        display: block;
-
         object-fit: cover;
-
+        display: block;
         border-radius: 0;
     }
 }
