@@ -8,400 +8,638 @@
     --apple-color: #202124;
 }
 
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-} 
- 
-.parent-login { 
-    display: flex; 
-    justify-content: space-between; 
-    height: 100%; 
-} 
- 
-.form { 
-    display: flex; 
-    flex-flow: column wrap; 
-    justify-content: center; 
-    position: relative; 
-    left: 12%; 
-    gap: 1.5rem; 
-} 
- 
-.form h1 { 
-    font-family: "Poppins", sans-serif; 
-    font-weight: 400; 
-    font-style: normal; 
-    position: relative; 
-    top: -1rem; 
-    font-size: 3rem; 
-} 
- 
-.form-1 { 
-    display: flex; 
-    justify-content: flex-start; 
-    flex-direction: column; 
-    gap: 1.5rem; 
-    width: 120%; 
-} 
- 
-.form-1 label { 
-    font-family: "Poppins", sans-serif; 
-    font-weight: 400; 
-    font-style: normal; 
-    position: relative; 
-    top: 0.7rem; 
-    left: 0.5rem; 
-} 
- 
-.form-1 input { 
-    border-radius: 15px; 
-    padding: 10px; 
-    border: 1px solid var(--border-color); 
-} 
- 
-.big-image img { 
-    width: 43rem; 
-    height: auto; 
-    display: block; 
-    border-top-left-radius: 33px; 
-    border-bottom-left-radius: 33px; 
-} 
- 
-.terms input { 
-    position: relative; 
-    top: 0.8rem; 
-} 
- 
-.signup { 
-    border: 0; 
-    color: var(--white-color); 
-    font: inherit; 
-    text-align: center; 
-    padding: 1rem; 
-    border-radius: 30px; 
-    background-color: var(--primary-color); 
-    position: relative; 
-    top: 2rem; 
-} 
- 
-.signup a { 
-    text-decoration: none; 
-    color: var(--white-color); 
-} 
- 
-.signup a { 
-    font-family: "Poppins", sans-serif; 
-    font-weight: 400; 
-    font-style: normal; 
-} 
- 
-.signup:hover { 
-    background-color: var(--primary-hover-color); 
-    cursor: pointer; 
-    transform: translateY(-3px); 
-    box-shadow: 0 8px 18px var(--shadow-color); 
-    transition: 0.2s; 
-} 
- 
-.center { 
-    text-align: center; 
-    position: relative; 
-    top: 3rem; 
-} 
- 
-.signin { 
-    display: flex; 
-    justify-content: space-between; 
-    gap: 1rem; 
-    position: relative; 
-    top: 4rem; 
-} 
- 
-.ques { 
-    position: relative; 
-    top: 6rem; 
-    display: flex; 
-    left: 30%; 
-    gap: 0.5rem; 
-} 
- 
-.ques p { 
-    font-family: "Poppins", sans-serif; 
-    font-weight: 400; 
-    font-style: normal; 
-} 
- 
-.ques a { 
-    color: var(--primary-hover-color); 
-    font-family: "Poppins", sans-serif; 
-    font-weight: 400; 
-    font-style: normal; 
-} 
- 
-.or { 
-    font-family: "Poppins", sans-serif; 
-    font-weight: 400; 
-    font-style: normal; 
-} 
- 
-.google, 
-.apple { 
-    display: flex; 
-    border-radius: 10px; 
-    width: 90%; 
-    border: 1px solid var(--border-color); 
-    gap: 1rem; 
-} 
- 
-.google:hover, 
-.apple:hover { 
-    color: var(--white-color); 
-    cursor: pointer; 
-    transform: translateY(-3px); 
-    box-shadow: 0 8px 18px var(--shadow-color); 
-    transition: 0.2s; 
-} 
- 
-.google:hover { 
-    background-color: var(--google-color); 
-    border-color: var(--google-color); 
-} 
- 
-.apple:hover { 
-    background-color: var(--apple-color); 
-    border-color: var(--apple-color); 
-} 
- 
-.apple:hover img { 
-    filter: brightness(0) invert(1); 
-} 
- 
-.google p, 
-.apple p { 
-    position: relative; 
-    top: 0.4rem; 
-    font-family: "Poppins", sans-serif; 
-    font-weight: 400; 
-    font-style: normal; 
-} 
- 
-.google img, 
-.apple img { 
-    width: 30px; 
-    position: relative; 
-    left: 0.5rem; 
-} 
- 
-/* Tablet Responsiveness: 769px to 972px */ 
-@media (min-width: 769px) and (max-width: 972px) { 
-    .parent-login { 
-        flex-direction: row; 
-        height: 100vh; 
-        min-height: auto; 
-        align-items: stretch; 
-    } 
- 
-    .form { 
-        width: 45%; 
-        left: 0; 
-        padding: 20px; 
-        gap: 0.8rem; 
-        justify-content: center; 
-    } 
- 
-    .form h1 { 
-        font-size: 1.6rem; 
-        top: 0; 
-    } 
- 
-    .form-1 { 
-        width: 100%; 
-        gap: 0.8rem; 
-    } 
- 
-    .form-1 label { 
-        font-size: 12px; 
-        top: 0.4rem; 
-    } 
- 
-    .form-1 input { 
-        border-radius: 10px; 
-        padding: 8px; 
-        font-size: 12px; 
-    } 
- 
-    .terms { 
-        font-size: 11px; 
-        position: relative; 
-        bottom: 0; 
-    } 
- 
-    .signup { 
-        width: 100%; 
-        top: 0; 
-        padding: 0.8rem; 
-        font-size: 12px; 
-        margin-bottom: 0.5rem; 
-    } 
- 
-    .center { 
-        text-align: center; 
-        position: relative; 
-        top: 0; 
-    } 
- 
-    .or { 
-        margin-bottom: 0.5rem; 
-    } 
- 
-    .or p { 
-        font-size: 12px; 
-        margin: 0.5rem 0; 
-    } 
- 
-    .signin { 
-        flex-direction: column; 
-        gap: 0.6rem; 
-        position: relative; 
-        top: 0; 
-        left: 0; 
-    } 
- 
-    .google, 
-    .apple { 
-        width: 100%; 
-        border-radius: 8px; 
-        gap: 0.8rem; 
-        min-height: 40px; 
-        align-items: center; 
-    } 
- 
-    .google img, 
-    .apple img { 
-        width: 24px; 
-        left: 0.4rem; 
-    } 
- 
-    .google p, 
-    .apple p { 
-        font-size: 12px; 
-        top: 0; 
-        margin: 0; 
-    } 
- 
-    .ques { 
-        position: relative; 
-        top: 0; 
-        left: 0; 
-        display: flex; 
-        gap: 0.3rem; 
-        justify-content: center; 
-        margin-top: 0.8rem; 
-    } 
- 
-    .ques p { 
-        font-size: 11px; 
-    } 
- 
-    .ques a { 
-        font-size: 11px; 
-    } 
- 
-    .big-image { 
-        width: 55%; 
-        height: auto; 
-    } 
- 
-    .big-image img { 
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover; 
-        border-top-left-radius: 0; 
-        border-bottom-left-radius: 0; 
-        border-radius: 0; 
-    } 
-} 
- 
-@media (max-width: 768px) { 
-    .parent-login { 
-        flex-direction: column; 
-        min-height: 100vh; 
-        height: auto; 
-    } 
- 
-    .form { 
-        width: 100%; 
-        padding: 2rem 1.25rem 3rem; 
-        left: 0; 
-        gap: 1rem; 
-    } 
- 
-    .form h1 { 
-        top: 0; 
-        font-size: 2.25rem; 
-        text-align: center; 
-    } 
- 
-    .form-1 { 
-        width: 100%; 
-        gap: 1rem; 
-    } 
- 
-    .terms { 
-        position: relative; 
-        bottom: 0.5rem; 
-    } 
- 
-    .or { 
-        margin-bottom: 1rem; 
-    } 
- 
-    .signup { 
-        width: 100%; 
-        top: 0; 
-    } 
- 
-    .center { 
-        top: 0; 
-        width: 100%; 
-    } 
- 
-    .signin { 
-        flex-direction: column; 
-        gap: 1rem; 
-        top: 0; 
-    } 
- 
-    .google, 
-    .apple { 
-        width: 100%; 
-        min-height: 50px; 
-        align-items: center; 
-    } 
- 
-    .google p, 
-    .apple p { 
-        top: 0; 
-        margin: 0; 
-    } 
- 
-    .ques { 
-        justify-content: center; 
-        left: 0; 
-        top: 2rem; 
-        position: relative; 
-    } 
- 
-    .big-image { 
-        width: 100%; 
-    } 
- 
-    .big-image img { 
-        width: 100%; 
-        height: auto; 
-        object-fit: cover; 
-        border-radius: 0; 
-    } 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-login {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: relative;
+    left: 12%;
+    gap: 1.5rem;
+}
+
+.form h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: -1rem;
+    font-size: 3rem;
+}
+
+.form-1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 120%;
+}
+
+.form-1 label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 0.7rem;
+    left: 0.5rem;
+}
+
+.form-1 input {
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.big-image img {
+    width: 43rem;
+    height: auto;
+    display: block;
+    border-top-left-radius: 33px;
+    border-bottom-left-radius: 33px;
+}
+
+.terms input {
+    position: relative;
+    top: 0.8rem;
+}
+
+.signup {
+    border: 0;
+    color: var(--white-color);
+    font: inherit;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    position: relative;
+    top: 2rem;
+}
+
+.signup a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.signup a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.signup:hover {
+    background-color: var(--primary-hover-color);
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px var(--shadow-color);
+    transition: 0.2s;
+}
+
+.center {
+    text-align: center;
+    position: relative;
+    top: 3rem;
+}
+
+.signin {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    top: 4rem;
+}
+
+.ques {
+    position: relative;
+    top: 6rem;
+    display: flex;
+    left: 30%;
+    gap: 0.5rem;
+}
+
+.ques p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ques a {
+    color: var(--primary-hover-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.or {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.google,
+.apple {
+    display: flex;
+    border-radius: 10px;
+    width: 90%;
+    border: 1px solid var(--border-color);
+    gap: 1rem;
+}
+
+.google:hover,
+.apple:hover {
+    color: var(--white-color);
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px var(--shadow-color);
+    transition: 0.2s;
+}
+
+.google:hover {
+    background-color: var(--google-color);
+    border-color: var(--google-color);
+}
+
+.apple:hover {
+    background-color: var(--apple-color);
+    border-color: var(--apple-color);
+}
+
+.apple:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.google p,
+.apple p {
+    position: relative;
+    top: 0.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.google img,
+.apple img {
+    width: 30px;
+    position: relative;
+    left: 0.5rem;
+}
+
+/* Tablet Responsiveness: 769px to 972px */
+@media (min-width: 769px) and (max-width: 972px) {
+    .parent-login {
+        flex-direction: row;
+        height: 100vh;
+        min-height: auto;
+        align-items: stretch;
+    }
+
+    .form {
+        width: 45%;
+        left: 0;
+        padding: 20px;
+        gap: 0.8rem;
+        justify-content: center;
+    }
+
+    .form h1 {
+        font-size: 1.6rem;
+        top: 0;
+    }
+
+    .form-1 {
+        width: 100%;
+        gap: 0.8rem;
+    }
+
+    .form-1 label {
+        font-size: 12px;
+        top: 0.4rem;
+    }
+
+    .form-1 input {
+        border-radius: 10px;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .terms {
+        font-size: 11px;
+        position: relative;
+        bottom: 0;
+    }
+
+    .signup {
+        width: 100%;
+        top: 0;
+        padding: 0.8rem;
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+    }
+
+    .center {
+        text-align: center;
+        position: relative;
+        top: 0;
+    }
+
+    .or {
+        margin-bottom: 0.5rem;
+    }
+
+    .or p {
+        font-size: 12px;
+        margin: 0.5rem 0;
+    }
+
+    .signin {
+        flex-direction: column;
+        gap: 0.6rem;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .google,
+    .apple {
+        width: 100%;
+        border-radius: 8px;
+        gap: 0.8rem;
+        min-height: 40px;
+        align-items: center;
+    }
+
+    .google img,
+    .apple img {
+        width: 24px;
+        left: 0.4rem;
+    }
+
+    .google p,
+    .apple p {
+        font-size: 12px;
+        top: 0;
+        margin: 0;
+    }
+
+    .ques {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        gap: 0.3rem;
+        justify-content: center;
+        margin-top: 0.8rem;
+    }
+
+    .ques p {
+        font-size: 11px;
+    }
+
+    .ques a {
+        font-size: 11px;
+    }
+
+    .big-image {
+        width: 55%;
+        height: auto;
+    }
+
+    .big-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .parent-login {
+        flex-direction: column;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .form {
+        width: 100%;
+        padding: 2rem 1.25rem 3rem;
+        left: 0;
+        gap: 1rem;
+    }
+
+    .form h1 {
+        top: 0;
+        font-size: 2.25rem;
+        text-align: center;
+    }
+
+    .form-1 {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .terms {
+        position: relative;
+        bottom: 0.5rem;
+    }
+
+    .or {
+        margin-bottom: 1rem;
+    }
+
+    .signup {
+        width: 100%;
+        top: 0;
+    }
+
+    .center {
+        top: 0;
+        width: 100%;
+    }
+
+    .signin {
+        flex-direction: column;
+        gap: 1rem;
+        top: 0;
+    }
+
+    .google,
+    .apple {
+        width: 100%;
+        min-height: 50px;
+        align-items: center;
+    }
+
+    .google p,
+    .apple p {
+        top: 0;
+        margin: 0;
+    }
+
+    .ques {
+        justify-content: center;
+        left: 0;
+        top: 2rem;
+        position: relative;
+    }
+
+    .big-image {
+        width: 100%;
+    }
+
+    .big-image img {
+        display: none;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0;
+    }
+}
+
+/* =========================
+   SIGN UP RESPONSIVE
+   973px to 1124px
+   ========================= */
+
+@media (min-width: 973px) and (max-width: 1124px) {
+
+    .parent-login {
+        width: 100%;
+        height: 100vh;
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+
+        overflow: hidden;
+    }
+
+
+    /* ================= FORM ================= */
+
+    .form {
+        width: 50%;
+        height: 100%;
+
+        position: static;
+
+        padding: 30px 45px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* مهم جداً */
+        justify-content: center;
+
+        gap: 12px;
+
+        flex-shrink: 0;
+    }
+
+
+    .form h1 {
+        font-size: 2.2rem;
+
+        position: static;
+
+        margin: 0 0 8px 0;
+    }
+
+
+    /* ================= INPUTS ================= */
+
+    .form-1 {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        gap: 12px;
+    }
+
+    .form-1 label {
+        position: static;
+
+        font-size: 14px;
+        margin-left: 3px;
+    }
+
+    .form-1 input {
+        width: 100%;
+
+        padding: 10px;
+
+        border-radius: 10px;
+
+        font-size: 14px;
+    }
+
+
+    /* ================= TERMS ================= */
+
+    .terms {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        gap: 5px;
+
+        font-size: 11px;
+
+        position: static;
+
+        margin-top: 3px;
+    }
+
+    .terms input {
+        position: static;
+
+        margin: 0;
+
+        width: auto;
+        height: auto;
+
+        flex-shrink: 0;
+    }
+
+
+    /* ================= SIGN UP BUTTON ================= */
+
+    .signup {
+        width: 100%;
+
+        position: static;
+
+        padding: 11px;
+
+        margin: 5px 0 0 0;
+
+        font-size: 14px;
+    }
+
+
+    /* ================= OR ================= */
+
+    .center {
+        width: 100%;
+
+        position: static;
+
+        text-align: center;
+
+        margin-top: 5px;
+    }
+
+    .or {
+        font-size: 13px;
+    }
+
+
+    /* ================= GOOGLE / APPLE ================= */
+
+    .signin {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        gap: 10px;
+
+        position: static;
+
+        margin: 0;
+
+        flex-shrink: 0;
+    }
+
+    .google,
+    .apple {
+        width: 50%;
+        min-height: 42px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 7px;
+
+        border-radius: 8px;
+    }
+
+    .google img,
+    .apple img {
+        width: 21px;
+
+        position: static;
+    }
+
+    .google p,
+    .apple p {
+        position: static;
+
+        margin: 0;
+
+        font-size: 11px;
+    }
+
+
+    /* ================= HAVE AN ACCOUNT ================= */
+
+    .ques {
+        width: 100%;
+
+        position: static;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 5px;
+
+        margin-top: 5px;
+    }
+
+    .ques p,
+    .ques a {
+        font-size: 11px;
+    }
+
+
+    /* ================= IMAGE ================= */
+
+    .big-image {
+        width: 50%;
+        height: 100%;
+
+        flex-shrink: 0;
+
+        overflow: hidden;
+    }
+
+    .big-image img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+
+        border-radius: 0;
+    }
 }

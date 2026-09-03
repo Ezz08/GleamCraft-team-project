@@ -1108,3 +1108,320 @@ a:focus {
         position: static;
     }
 }
+
+/* =========================================
+   Responsive: 973px -> 1124px
+   ========================================= */
+
+@media (min-width: 973px) and (max-width: 1124px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ================= HEADER ================= */
+
+    .header {
+        margin-inline: 15px;
+        padding: 15px 10px;
+    }
+
+    .nav nav {
+        gap: 22px;
+    }
+
+    .nav li a {
+        font-size: 16px;
+        left: 0;
+    }
+
+    .logo img {
+        width: 45px;
+    }
+
+    .logo h4 {
+        left: 15px;
+        font-size: 26px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        width: 100%;
+        height: auto;
+        min-height: 650px;
+        padding: 50px 40px;
+        gap: 30px;
+    }
+
+    .txt {
+        width: 50%;
+        padding-left: 0;
+    }
+
+    .txt h3 {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .txt h1 {
+        width: 100%;
+        max-width: 520px;
+        font-size: 45px;
+        line-height: 1.1;
+        margin-bottom: 25px;
+    }
+
+    .con-t {
+        width: 100%;
+        max-width: 500px;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .icon {
+        margin-left: 20px;
+    }
+
+    .icon p {
+        font-size: 15px;
+    }
+
+    .img {
+        width: 50%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+
+    /* ================= ABOUT ================= */
+
+    .about {
+        width: 100%;
+        height: auto;
+        min-height: 650px;
+        padding: 60px 40px;
+        gap: 35px;
+    }
+
+    .about .image {
+        width: 40%;
+        max-width: 360px;
+        height: 450px;
+        flex-shrink: 0;
+    }
+
+    .about .text {
+        width: 60%;
+        margin-left: 0;
+    }
+
+    .about .text h4 {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .about .text h2 {
+        font-size: 34px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .about .text .con {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .about .text ul {
+        margin-bottom: 25px;
+    }
+
+    .about .text ul li {
+        width: 48%;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+
+    /* ================= STATISTICS ================= */
+
+    .section4,
+    section4 {
+        padding: 50px 0;
+    }
+
+    .us {
+        width: calc(100% - 80px);
+        padding: 35px 20px;
+    }
+
+    .doctors,
+    .country,
+    .years,
+    .partners {
+        width: 25%;
+    }
+
+    .doctors span,
+    .country span,
+    .years span,
+    .partners span {
+        font-size: 50px;
+    }
+
+    .doctors p,
+    .country p,
+    .years p,
+    .partners p {
+        font-size: 15px;
+    }
+
+
+    /* ================= REVIEWS ================= */
+
+    .section5 {
+        height: auto;
+        min-height: 700px;
+        padding: 60px 40px;
+    }
+
+    .section5 .parent {
+        height: auto;
+        min-height: 600px;
+        gap: 30px;
+    }
+
+    .section5 .review {
+        width: 42%;
+        height: auto;
+        padding-top: 20px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .section5 .review h4 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .section5 .review h2 {
+        width: 100%;
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .section5 .review .photo {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .section5 .review .photo img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    .section5 .cards {
+        width: 58%;
+        height: auto;
+        padding-left: 0;
+        gap: 20px;
+    }
+
+    .section5 .cards div {
+        width: calc(50% - 10px);
+        height: 230px;
+        padding: 15px;
+    }
+
+    .section5 .cards img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .section5 .cards i {
+        font-size: 13px;
+    }
+
+    .section5 .cards p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .section5 .cards h5 {
+        font-size: 12px;
+    }
+
+    .section5 .cards h6 {
+        font-size: 10px;
+    }
+
+    /* نخلي ترتيب الكروت مناسب للمساحة */
+
+    .section5 .card1 {
+        margin-top: 20px;
+    }
+
+    .section5 .card2 {
+        margin-top: 0;
+    }
+
+    .section5 .card3 {
+        margin-top: 20px;
+    }
+
+    .section5 .card4 {
+        margin-top: 0;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer-parent {
+        height: auto;
+        min-height: 450px;
+        margin-inline: 15px;
+        padding: 50px 30px 30px;
+        gap: 30px;
+    }
+
+    .footer-child:nth-child(2),
+    .footer-child:nth-child(3),
+    .footer-child:nth-child(4) {
+        position: static;
+    }
+
+    .footer-child:nth-child(3) p {
+        width: 100%;
+    }
+
+    .footer-child h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-child h2 {
+        font-size: 1.1rem;
+    }
+
+    .footer-child p {
+        font-size: 13px;
+    }
+
+    .footer-child a {
+        font-size: 13px;
+        left: 0;
+    }
+}

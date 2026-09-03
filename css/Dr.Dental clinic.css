@@ -920,3 +920,39 @@ a:focus {
         width: 100%;
     }
 }
+
+/* =========================================
+   Responsive: 973px -> 1124px
+   ========================================= */
+
+@media (min-width: 973px) and (max-width: 1124px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ================= HEADER ================= */
+
+    .header {
+        margin-inline: 15px;
+        padding: 15px 10px;
+    }
+
+    .nav nav {
+        gap: 22px;
+    }
+
+    .nav li a {
+        font-size: 16px;
+        left: 0;
+    }
+
+    .logo img {
+        width: 45px;
+    }
+
+    .logo h4 {
+        left: 15px;
+        font-size: 26px;
+    }
+}
